@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+<link rel="icon" href="img/bu_logo.png" type="image/x-icon">
+
+
+    <title>Home |  BU CSE </title>
+
+</head>
+
+
+<body>
+
+
+    
+    <!-- navbar cover -->
+<div class="nav_cover" >
+    <a href="index.html" class="navbar-brand ">
+        <img data-aos="fade-left" src="img/cover_logo.png" class="img-fluid " alt="Bu_logo" style="max-height: 100px; width:auto;">
+    </a>
+</div>
+
+
+
+
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top shadow-lg" id="nav_bar">
+  <div class="container-fluid">
+
+    <!-- Logo + Department Name -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="img/cse.jpg" alt="Bu_logo" style="max-height: 60px; width:auto; border-radius: 50%;" class="me-2">
+      <span class="dept_name d-none d-md-inline" data-aos="slide-down">Department Of Computer Science And Engineering</span>
+    </a>
+
+    <!-- Hamburger Button for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" 
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <!-- Home -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <!-- Home -->
+        <li class="nav-item">
+          <a class="nav-link" href="notice.html">Notice</a>
+        </li>
+
+
+        <!-- About Us -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+            About Us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#head-message">Message From Department Head</a></li>
+            <li><a class="dropdown-item" href="#about-department">About The Department </a></li>
+            <li><a class="dropdown-item" href="about.html">Vision & Mission</a></li>
+            <li><a class="dropdown-item" href="about.html">Achievements</a></li>
+          </ul>
+        </li>
+
+        <!-- Faculty -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="facultyDropdown" role="button" data-bs-toggle="dropdown">
+            People
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="people.html">Faculty</a></li>
+            <li><a class="dropdown-item" href="people.html">Officers</a></li>
+            <li><a class="dropdown-item" href="people.html">Staff</a></li>
+          </ul>
+        </li>
+
+
+          <!-- Research -->
+        <li class="nav-item">
+          <a class="nav-link " href="research.html" >
+            Research
+          </a>
+        </li>
+
+
+    <!-- Programs -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown">
+            Publications
+          </a>
+          <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="publication.html">Articles</a></li>
+                <li><a class="dropdown-item" href="publication.html">Books</a></li>
+                <li><a class="dropdown-item" href="publication.html">Book Chapters</a></li>
+                <li><a class="dropdown-item" href="publication.html">Conferences</a></li>
+                <li><a class="dropdown-item" href="publication.html">Publications</a></li>
+                <li><a class="dropdown-item" href="publication.html">Monographs</a></li>
+                <li><a class="dropdown-item" href="publication.html">Workshops</a></li>
+        </ul>
+
+        </li>
+
+      <!-- Faculty -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="facultyDropdown" role="button" data-bs-toggle="dropdown">
+            Others
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Curriculum.html">Curriculum</a></li>
+            <li><a class="dropdown-item" href="Seminar.html"> Seminar/Workshop</a></li>
+            <li><a class="dropdown-item" href="Chitizens.html">Chitizens Charter</a></li>
+            <li><a class="dropdown-item" href="Alumni.html">Alumni</a></li>
+
+          </ul>
+        </li>
+    
+        <!-- Contact -->
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<!-- Loader -->
+<div id="loader-wrapper">
+  <div class="loader"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Notice Board / Events (20%) -->
+<div class="col-12 col-lg-12 mb-4 p-5 align-items-center">
+  <div class="p-3 shadow rounded bg-light">
+    <h3>
+      <i class="fas fa-bullhorn" style="color: tomato; margin-right: 8px;"></i>
+      Notice Board
+    </h3>
+
+    <!-- Search & Sort Controls -->
+    <div class="row mb-3 p-5">
+      <!-- Search -->
+      <div class="col-md-4 mb-2">
+        <input type="text" id="noticeSearch" class="form-control" placeholder="Search notices...">
+      </div>
+
+      <!-- Sort -->
+      <div class="col-md-4 mb-2">
+        <select id="sortByDate" class="form-select">
+          <option value="newest">Sort by: Newest First</option>
+          <option value="oldest">Sort by: Oldest First</option>
+        </select>
+      </div>
+
+      <!-- Date Range Filter -->
+      <div class="col-md-4 mb-2 d-flex">
+        <input type="date" id="startDate" class="form-control me-2">
+        <input type="date" id="endDate" class="form-control me-2">
+        <button id="filterDateRange" class="btn btn-outline-primary">Filter</button>
+      </div>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="mb-3">
+      <button class="btn btn-sm btn-outline-primary filter-btn m-2" data-type="all">All</button>
+      <button class="btn btn-sm btn-outline-success filter-btn m-2" data-type="Admission">Admission</button>
+      <button class="btn btn-sm btn-outline-warning filter-btn m-2" data-type="NOC">NOC</button>
+      <button class="btn btn-sm btn-outline-info filter-btn m-2" data-type="Office Notice">Office Notice</button>
+      <button class="btn btn-sm btn-outline-dark filter-btn m-2" data-type="Office Order">Office Order</button>
+      <button class="btn btn-sm btn-outline-secondary filter-btn m-2" data-type="Student">Student</button>
+      <button class="btn btn-sm btn-outline-danger filter-btn m-2" data-type="Teacher">Teacher</button>
+      <button class="btn btn-sm btn-outline-primary filter-btn m-2" data-type="Tender">Tender</button>
+      <button class="btn btn-sm btn-outline-warning filter-btn m-2" data-type="Transport">Transport</button>
+    </div>
+
+    <!-- Notices List -->
+    <ul class="list-unstyled p-5" id="noticeList">
+      <!-- Example Notice -->
+      <li>
+        <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center"
+          data-type="Admission" data-date="2025-01-01">
+          <div>
+            <b>Undergraduate Admission Circular 2025</b>
+            <p><i class="fas fa-calendar-alt me-2"></i>01 Jan 2025</p>
+          </div>
+          <span class="badge bg-success">Admission</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center"
+          data-type="NOC" data-date="2025-02-15">
+          <div>
+            <b>NOC for Higher Studies Application</b>
+            <p><i class="fas fa-calendar-alt me-2"></i>15 Feb 2025</p>
+          </div>
+          <span class="badge bg-warning text-dark">NOC</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center"
+          data-type="Office Notice" data-date="2025-02-21">
+          <div>
+            <b>Office Closed on National Holiday</b>
+            <p><i class="fas fa-calendar-alt me-2"></i>21 Feb 2025</p>
+          </div>
+          <span class="badge bg-info text-dark">Office Notice</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center"
+          data-type="Office Order" data-date="2025-02-28">
+          <div>
+            <b>New Faculty Joining Notice</b>
+            <p><i class="fas fa-calendar-alt me-2"></i>28 Feb 2025</p>
+          </div>
+          <span class="badge bg-dark">Office Order</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center"
+          data-type="Student" data-date="2025-03-10">
+          <div>
+            <b>Scholarship Application Deadline</b>
+            <p><i class="fas fa-calendar-alt me-2"></i>10 Mar 2025</p>
+          </div>
+          <span class="badge bg-secondary">Student</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center"
+          data-type="Teacher" data-date="2025-03-12">
+          <div>
+            <b>Faculty Meeting Schedule</b>
+            <p><i class="fas fa-calendar-alt me-2"></i>12 Mar 2025</p>
+          </div>
+          <span class="badge bg-danger">Teacher</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center"
+          data-type="Tender" data-date="2025-03-20">
+          <div>
+            <b>Tender for Lab Equipment</b>
+            <p><i class="fas fa-calendar-alt me-2"></i>20 Mar 2025</p>
+          </div>
+          <span class="badge bg-primary">Tender</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center"
+          data-type="Transport" data-date="2025-03-25">
+          <div>
+            <b>New Bus Schedule for Students</b>
+            <p><i class="fas fa-calendar-alt me-2"></i>25 Mar 2025</p>
+          </div>
+          <span class="badge bg-warning text-dark">Transport</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center"
+          data-type="Admission" data-date="2025-03-30">
+          <div>
+            <b>Graduate Admission Results</b>
+            <p><i class="fas fa-calendar-alt me-2"></i>30 Mar 2025</p>
+          </div>
+          <span class="badge bg-success">Admission</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center"
+          data-type="NOC" data-date="2025-04-05">
+          <div>
+            <b>NOC for Conference Participation</b>
+            <p><i class="fas fa-calendar-alt me-2"></i>05 Apr 2025</p>
+          </div>
+          <span class="badge bg-warning text-dark">NOC</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+<script>
+  const images = document.images;
+  let loadedCount = 0;
+  let loaderHidden = false;
+
+  function hideLoader() {
+    if (!loaderHidden) {
+      loaderHidden = true;
+      document.body.classList.add("loaded");
+      // Initialize AOS after loader disappears
+      AOS.init({ duration: 1000, once: true });
+      setTimeout(() => AOS.refresh(), 100);
+    }
+  }
+
+  // Maximum loader time = 2 seconds
+  setTimeout(hideLoader, 2000);
+
+  if (images.length === 0) {
+    hideLoader();
+  } else {
+    for (let i = 0; i < images.length; i++) {
+      if (images[i].complete) {
+        loadedCount++;
+      } else {
+        images[i].addEventListener('load', () => {
+          loadedCount++;
+          if (loadedCount === images.length) hideLoader();
+        });
+        images[i].addEventListener('error', () => {
+          loadedCount++;
+          if (loadedCount === images.length) hideLoader();
+        });
+      }
+    }
+    if (loadedCount === images.length) hideLoader();
+  }
+</script>
+
+
+
+
+
+
+
+<script>
+  const searchInput = document.getElementById("noticeSearch");
+  const sortSelect = document.getElementById("sortByDate");
+  const noticeList = document.getElementById("noticeList");
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const filterDateBtn = document.getElementById("filterDateRange");
+  const startDateInput = document.getElementById("startDate");
+  const endDateInput = document.getElementById("endDate");
+
+  function filterNotices() {
+    let searchValue = searchInput.value.toLowerCase();
+    let filterType = document.querySelector(".filter-btn.active")?.dataset.type || "all";
+    let startDate = startDateInput.value ? new Date(startDateInput.value) : null;
+    let endDate = endDateInput.value ? new Date(endDateInput.value) : null;
+
+    document.querySelectorAll("#noticeList li").forEach(li => {
+      let notice = li.querySelector(".notice_content");
+      let text = notice.innerText.toLowerCase();
+      let type = notice.dataset.type;
+      let date = new Date(notice.dataset.date);
+
+      let matchesSearch = text.includes(searchValue);
+      let matchesType = (filterType === "all" || type === filterType);
+      let matchesDate = true;
+
+      if (startDate && endDate) {
+        matchesDate = (date >= startDate && date <= endDate);
+      }
+
+      li.style.display = (matchesSearch && matchesType && matchesDate) ? "" : "none";
+    });
+  }
+
+  function sortNotices() {
+    let notices = Array.from(document.querySelectorAll("#noticeList li"));
+    let sorted = notices.sort((a, b) => {
+      let dateA = new Date(a.querySelector(".notice_content").dataset.date);
+      let dateB = new Date(b.querySelector(".notice_content").dataset.date);
+
+      return sortSelect.value === "newest" ? dateB - dateA : dateA - dateB;
+    });
+
+    sorted.forEach(li => noticeList.appendChild(li));
+  }
+
+  searchInput.addEventListener("input", filterNotices);
+  sortSelect.addEventListener("change", () => { sortNotices(); filterNotices(); });
+  filterDateBtn.addEventListener("click", filterNotices);
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      filterButtons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      filterNotices();
+    });
+  });
+
+  // Initial sort
+  sortNotices();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="footer-container">
+    <!-- Contact Info -->
+    <div>
+      <h3>University of Barishal</h3>
+      <p>Kornokathi, Barishal-8254, Bangladesh</p>
+      <p><i class="fa-solid fa-phone"></i> 0431-2177771-77</p>
+      <p><i class="fa-solid fa-envelope"></i> registrar@bu.ac.bd</p>
+      <p><i class="fa-solid fa-fax"></i> 09032-56270</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Academics -->
+    <div>
+      <h3>Academics</h3>
+      <ul>
+        <li><a href="#">Academic Programs</a></li>
+        <li><a href="#">Academic Calendar</a></li>
+        <li><a href="#">Journal Access</a></li>
+        <li><a href="#">Scholarships</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul>
+    </div>
+
+    <!-- Admission -->
+    <div>
+      <h3>Admission</h3>
+      <ul>
+        <li><a href="#">Undergraduate</a></li>
+        <li><a href="#">Postgraduate</a></li>
+        <li><a href="#">Foreign Students</a></li>
+      </ul>
+    </div>
+
+    <!-- Important Links -->
+    <div>
+      <h3>Important Links</h3>
+      <ul>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Ministry of Education</a></li>
+        <li><a href="#">Prime Minister’s Office</a></li>
+        <li><a href="#">UGC</a></li>
+        <li><a href="#">National Portal</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    <p>© 2025 University of Barishal. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<a href="#top" id="goUpBtn" class="btn " 
+   style="position: fixed; background-color : #2980b9; color : white; bottom: 20px; right: 20px; display: none; z-index: 999;">
+  <i class="fas fa-arrow-up"></i>
+</a>
+
+
+
+
+
+<!-- script part -->
+    <script  src="navbar.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+
+
+
+</body>
+
+</html>

@@ -66,6 +66,11 @@
         <li class="nav-item">
           <a class="nav-link" href="index.html">Home</a>
         </li>
+        
+        <!-- Home -->
+        <li class="nav-item">
+          <a class="nav-link" href="notice.html">Notice</a>
+        </li>
 
         <!-- About Us -->
         <li class="nav-item dropdown">
@@ -142,6 +147,15 @@
     </div>
   </div>
 </nav>
+
+
+
+<!-- Loader -->
+<div id="loader-wrapper">
+  <div class="loader"></div>
+</div>
+
+
 
 
 
@@ -434,149 +448,149 @@
     <div class="col-12 col-lg-3 mb-4">
 
 
-      <div class="p-3 shadow rounded bg-light">
+                    <div class="p-3 shadow rounded bg-light">
 
-        
-<h3><i class="fas fa-bullhorn" style="color: tomato; margin-right: 8px;"></i>Notice Board</h3>
-<!-- Filter Buttons -->
-<div class="mb-3">
-  <button class="btn btn-sm btn-outline-primary filter-btn m-2" data-type="all">All</button>
-  <button class="btn btn-sm btn-outline-success filter-btn m-2 " data-type="Admission">Admission</button>
-  <button class="btn btn-sm btn-outline-warning filter-btn m-2 " data-type="NOC">NOC</button>
-  <button class="btn btn-sm btn-outline-info filter-btn m-2 " data-type="Office Notice">Office Notice</button>
-  <button class="btn btn-sm btn-outline-dark filter-btn m-2 " data-type="Office Order">Office Order</button>
-  <button class="btn btn-sm btn-outline-secondary filter-btn m-2 " data-type="Student">Student</button>
-  <button class="btn btn-sm btn-outline-danger filter-btn m-2 " data-type="Teacher">Teacher</button>
-  <button class="btn btn-sm btn-outline-primary filter-btn m-2 " data-type="Tender">Tender</button>
-  <button class="btn btn-sm btn-outline-warning filter-btn m-2 " data-type="Transport">Transport</button>
-</div>
+                      
+              <h3><i class="fas fa-bullhorn" style="color: tomato; margin-right: 8px;"></i>Notice Board</h3>
+              <!-- Filter Buttons -->
+              <div class="mb-3">
+                <button class="btn btn-sm btn-outline-primary filter-btn m-2" data-type="all">All</button>
+                <button class="btn btn-sm btn-outline-success filter-btn m-2 " data-type="Admission">Admission</button>
+                <button class="btn btn-sm btn-outline-warning filter-btn m-2 " data-type="NOC">NOC</button>
+                <button class="btn btn-sm btn-outline-info filter-btn m-2 " data-type="Office Notice">Office Notice</button>
+                <button class="btn btn-sm btn-outline-dark filter-btn m-2 " data-type="Office Order">Office Order</button>
+                <button class="btn btn-sm btn-outline-secondary filter-btn m-2 " data-type="Student">Student</button>
+                <button class="btn btn-sm btn-outline-danger filter-btn m-2 " data-type="Teacher">Teacher</button>
+                <button class="btn btn-sm btn-outline-primary filter-btn m-2 " data-type="Tender">Tender</button>
+                <button class="btn btn-sm btn-outline-warning filter-btn m-2 " data-type="Transport">Transport</button>
+              </div>
 
-<!-- Notices List -->
-<ul class="list-unstyled" id="noticeList">
+              <!-- Notices List -->
+              <ul class="list-unstyled" id="noticeList">
 
-  <!-- Admission -->
-  <li data-aos="fade-left">
-    <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="Admission">
-      <div>
-        <b>Undergraduate Admission Circular 2025</b>
-        <p><i class="fas fa-calendar-alt me-2"></i>01 Jan 2025</p>
-      </div>
-      <span class="badge bg-success">Admission</span>
-    </div>
-  </li>
+                <!-- Admission -->
+                <li data-aos="fade-left">
+                  <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="Admission">
+                    <div>
+                      <b>Undergraduate Admission Circular 2025</b>
+                      <p><i class="fas fa-calendar-alt me-2"></i>01 Jan 2025</p>
+                    </div>
+                    <span class="badge bg-success">Admission</span>
+                  </div>
+                </li>
 
-  <!-- NOC -->
-  <li data-aos="fade-left">
-    <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="NOC">
-      <div>
-        <b>NOC for Higher Studies Application</b>
-        <p><i class="fas fa-calendar-alt me-2"></i>15 Feb 2025</p>
-      </div>
-      <span class="badge bg-warning text-dark">NOC</span>
-    </div>
-  </li>
+                <!-- NOC -->
+                <li data-aos="fade-left">
+                  <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="NOC">
+                    <div>
+                      <b>NOC for Higher Studies Application</b>
+                      <p><i class="fas fa-calendar-alt me-2"></i>15 Feb 2025</p>
+                    </div>
+                    <span class="badge bg-warning text-dark">NOC</span>
+                  </div>
+                </li>
 
-  <!-- Office Notice -->
-  <li data-aos="fade-left">
-    <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="Office Notice">
-      <div>
-        <b>Office Closed on National Holiday</b>
-        <p><i class="fas fa-calendar-alt me-2"></i>21 Feb 2025</p>
-      </div>
-      <span class="badge bg-info text-dark">Office Notice</span>
-    </div>
-  </li>
+                <!-- Office Notice -->
+                <li data-aos="fade-left">
+                  <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="Office Notice">
+                    <div>
+                      <b>Office Closed on National Holiday</b>
+                      <p><i class="fas fa-calendar-alt me-2"></i>21 Feb 2025</p>
+                    </div>
+                    <span class="badge bg-info text-dark">Office Notice</span>
+                  </div>
+                </li>
 
-  <!-- Office Order -->
-  <li data-aos="fade-left">
-    <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="Office Order">
-      <div>
-        <b>New Faculty Joining Notice</b>
-        <p><i class="fas fa-calendar-alt me-2"></i>28 Feb 2025</p>
-      </div>
-      <span class="badge bg-dark">Office Order</span>
-    </div>
-  </li>
+                <!-- Office Order -->
+                <li data-aos="fade-left">
+                  <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="Office Order">
+                    <div>
+                      <b>New Faculty Joining Notice</b>
+                      <p><i class="fas fa-calendar-alt me-2"></i>28 Feb 2025</p>
+                    </div>
+                    <span class="badge bg-dark">Office Order</span>
+                  </div>
+                </li>
 
-  <!-- Student -->
-  <li data-aos="fade-left">
-    <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="Student">
-      <div>
-        <b>Scholarship Application Deadline</b>
-        <p><i class="fas fa-calendar-alt me-2"></i>10 Mar 2025</p>
-      </div>
-      <span class="badge bg-secondary">Student</span>
-    </div>
-  </li>
+                <!-- Student -->
+                <li data-aos="fade-left">
+                  <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="Student">
+                    <div>
+                      <b>Scholarship Application Deadline</b>
+                      <p><i class="fas fa-calendar-alt me-2"></i>10 Mar 2025</p>
+                    </div>
+                    <span class="badge bg-secondary">Student</span>
+                  </div>
+                </li>
 
-  <!-- Teacher -->
-  <li data-aos="fade-left">
-    <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="Teacher">
-      <div>
-        <b>Faculty Meeting Schedule</b>
-        <p><i class="fas fa-calendar-alt me-2"></i>12 Mar 2025</p>
-      </div>
-      <span class="badge bg-danger">Teacher</span>
-    </div>
-  </li>
+                <!-- Teacher -->
+                <li data-aos="fade-left">
+                  <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="Teacher">
+                    <div>
+                      <b>Faculty Meeting Schedule</b>
+                      <p><i class="fas fa-calendar-alt me-2"></i>12 Mar 2025</p>
+                    </div>
+                    <span class="badge bg-danger">Teacher</span>
+                  </div>
+                </li>
 
-  <!-- Tender -->
-  <li data-aos="fade-left">
-    <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="Tender">
-      <div>
-        <b>Tender for Lab Equipment</b>
-        <p><i class="fas fa-calendar-alt me-2"></i>20 Mar 2025</p>
-      </div>
-      <span class="badge bg-primary">Tender</span>
-    </div>
-  </li>
+                <!-- Tender -->
+                <li data-aos="fade-left">
+                  <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="Tender">
+                    <div>
+                      <b>Tender for Lab Equipment</b>
+                      <p><i class="fas fa-calendar-alt me-2"></i>20 Mar 2025</p>
+                    </div>
+                    <span class="badge bg-primary">Tender</span>
+                  </div>
+                </li>
 
-  <!-- Transport -->
-  <li data-aos="fade-left">
-    <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="Transport">
-      <div>
-        <b>New Bus Schedule for Students</b>
-        <p><i class="fas fa-calendar-alt me-2"></i>25 Mar 2025</p>
-      </div>
-      <span class="badge bg-warning text-dark">Transport</span>
-    </div>
-  </li>
+                <!-- Transport -->
+                <li data-aos="fade-left">
+                  <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="Transport">
+                    <div>
+                      <b>New Bus Schedule for Students</b>
+                      <p><i class="fas fa-calendar-alt me-2"></i>25 Mar 2025</p>
+                    </div>
+                    <span class="badge bg-warning text-dark">Transport</span>
+                  </div>
+                </li>
 
-  <!-- More Samples -->
-  <li data-aos="fade-left">
-    <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="Admission">
-      <div>
-        <b>Graduate Admission Results</b>
-        <p><i class="fas fa-calendar-alt me-2"></i>30 Mar 2025</p>
-      </div>
-      <span class="badge bg-success">Admission</span>
-    </div>
-  </li>
+                <!-- More Samples -->
+                <li data-aos="fade-left">
+                  <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="Admission">
+                    <div>
+                      <b>Graduate Admission Results</b>
+                      <p><i class="fas fa-calendar-alt me-2"></i>30 Mar 2025</p>
+                    </div>
+                    <span class="badge bg-success">Admission</span>
+                  </div>
+                </li>
 
-  <li data-aos="fade-left">
-    <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="NOC">
-      <div>
-        <b>NOC for Conference Participation</b>
-        <p><i class="fas fa-calendar-alt me-2"></i>05 Apr 2025</p>
-      </div>
-      <span class="badge bg-warning text-dark">NOC</span>
-    </div>
-  </li>
+                <li data-aos="fade-left">
+                  <div class="notice_content shadow my-2 p-3 rounded bg-light d-flex justify-content-between align-items-center" data-type="NOC">
+                    <div>
+                      <b>NOC for Conference Participation</b>
+                      <p><i class="fas fa-calendar-alt me-2"></i>05 Apr 2025</p>
+                    </div>
+                    <span class="badge bg-warning text-dark">NOC</span>
+                  </div>
+                </li>
 
-  <!-- See All -->
-  <li data-aos="fade-down">
-    <div class="text-center mt-3">
-      <a href="all-notices.html" class="btn btn-primary btn-sm">See All Notices</a>
-    </div>
-  </li>
+                <!-- See All -->
+                <li data-aos="fade-down">
+                  <div class="text-center mt-3">
+                    <a href="notice.html" class="btn btn-primary btn-sm">See All Notices</a>
+                  </div>
+                </li>
 
-</ul>
-
-
+              </ul>
 
 
 
-      </div>
+
+
+                    </div>
 
 
     </div>

@@ -104,3 +104,41 @@ const statsSection = document.querySelector('.statistics');
 observer.observe(statsSection);
 
 
+
+
+ const images = document.images;
+  let loadedCount = 0;
+  let loaderHidden = false;
+
+  function hideLoader() {
+    if (!loaderHidden) {
+      loaderHidden = true;
+      document.body.classList.add("loaded");
+      // Initialize AOS after loader disappears
+      AOS.init({ duration: 1000, once: true });
+      setTimeout(() => AOS.refresh(), 100);
+    }
+  }
+
+  // Maximum loader time = 2 seconds
+  setTimeout(hideLoader, 2000);
+
+  if (images.length === 0) {
+    hideLoader();
+  } else {
+    for (let i = 0; i < images.length; i++) {
+      if (images[i].complete) {
+        loadedCount++;
+      } else {
+        images[i].addEventListener('load', () => {
+          loadedCount++;
+          if (loadedCount === images.length) hideLoader();
+        });
+        images[i].addEventListener('error', () => {
+          loadedCount++;
+          if (loadedCount === images.length) hideLoader();
+        });
+      }
+    }
+    if (loadedCount === images.length) hideLoader();
+  }
