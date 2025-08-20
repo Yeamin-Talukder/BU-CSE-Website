@@ -1145,7 +1145,6 @@ border-radius: 5vh 5vh 0vh 0vh;
 .research-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 25px rgba(0,0,0,0.2);
-  background: #f8f9fa;
 }
 
 .card-icon {
